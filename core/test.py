@@ -26,8 +26,11 @@ def test_1():
 def test_2():
 
     list_of_lists_1 = [
+        [],
         ['a', 'b', 'c'],
+        [],
         ['d', 'e', 'f', 'h', False],
+        [],
         [1, 2, None]
     ]
 

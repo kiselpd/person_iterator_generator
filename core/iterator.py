@@ -33,7 +33,8 @@ class FlatIterator:
     
 
 def flat_generator(list_of_lists):
-
-    ...
-    yield
-    ...    
+    if list_of_lists:
+        for list_item in list_of_lists:
+            if list_item:
+                for item in list_item:
+                    yield item
