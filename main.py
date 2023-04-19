@@ -1,17 +1,23 @@
-from core.test import test_1, test_2
+import core.test as testlib
 
 def main():
     try:
-        test_1()
-        print("Тест 1 пройден!")
+        testlib.test_1()
+        print("test_1(итератор по спискам в списке) пройден!")
     except:
-        print("Тест 1 не пройден!") 
+        print("test_1(итератор по спискам в списке) не пройден!") 
     
     try:
-        test_2()
-        print("Тест 2 пройден!")
+        testlib.test_2()
+        print("test_2(генератор из списков в списке) пройден!")
     except:
-        print("Тест 2 не пройден!")
+        print("test_2(генератор из списков в списке) не пройден!")
+
+    try:
+        testlib.test_4()
+        print("test_4(генератор из списков неизвестной глубины) пройден!")
+    except:
+        print("test_4(генератор из списков неизвестной глубины) не пройден!") 
 
      
 if __name__=="__main__":
